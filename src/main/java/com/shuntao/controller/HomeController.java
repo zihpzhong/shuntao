@@ -49,7 +49,7 @@ public class HomeController {
 	public String save(Locale locale, Model model) {
 		try {
 			TctBaseBuyer po =new TctBaseBuyer();
-			
+			///!!!!!!!!!!!!!!!!!!!!!!111
 			po.setCorpName("草鸡");
 			po.setAddress("草鸡");
 			po.setCheckPhone("草鸡");
