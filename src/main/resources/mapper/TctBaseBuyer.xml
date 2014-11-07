@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.shuntao.dao.TctBaseBuyerDAO">
+         
+         <sql id="allmenbers">
+         id,
+         device_type,
+         device_num,
+         create_time,
+         last_time,
+         state,
+         nickname
+         </sql>
+         
+         <sql id="menberEcpId">
+         device_type,
+         device_num,
+         create_time,
+         last_time,
+         state,
+         nickname
+         </sql>
+         
+         <insert id="insertUser" parameterType="TctBaseBuyer" keyProperty="guid">
+             insert into Tct_Base_Buyer(  
+             corpName,
+         legalPerson,
+         address,
+         shorpCardPath,
+         linkman,
+         tel,operatorGuid,opTime) 
+         values 
+         (        
+         #{corpName},
+         #{legalPerson},
+         #{address},
+         #{shorpCardPath},
+         #{linkman},
+         #{tel},#{operatorGuid},#{opTime})
+         </insert>
+         
+<!--          <delete id="deleteStudent" parameterType="int">
+             delete from users_name where id = #{id}
+         </delete>
+         
+         <update id="updateStudent" parameterType="Student">
+             update users_name set name = #{name} where id = #{id}
+         </update>
+         
+         <select id="queryStudentById" parameterType="int" resultType="Student">
+           select * from users_name where id=#{id}
+         </select> 
+         
+         <select id="queryAllStudents" resultType="Student">
+             select * from users_name
+         </select> -->
+         
+         
+
+</mapper>
