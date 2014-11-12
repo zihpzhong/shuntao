@@ -60,6 +60,7 @@ public class HomeController {
 			po.setOpTime(new Date());
 			po.setShorpCardPath("1");
 			po.setTel("1");
+			//钟升仕
 			tctBaseBuyerService.insertUser(po);
 		} catch (Exception e) {
 			e.printStackTrace();
