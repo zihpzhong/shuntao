@@ -11,6 +11,9 @@ public class NgControllerAction {
 	@RequestMapping("ct")
 	public String controller(Model model) {
 		System.out.println("---------------------");
+		System.out.println("------------");
 		return "/ng/controller";
+		
+	
 	}
 }
