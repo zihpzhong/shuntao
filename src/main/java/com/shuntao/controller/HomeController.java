@@ -23,8 +23,8 @@ import com.shuntao.service.TctBaseBuyerService;
 public class HomeController {
 	
 	private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
-	@Autowired
-	private TctBaseBuyerService tctBaseBuyerService;
+	//@Autowired
+	//private TctBaseBuyerService tctBaseBuyerService;
 	/**
 	 * Simply selects the home view to render by returning its name.
 	 */
@@ -61,7 +61,7 @@ public class HomeController {
 			po.setShorpCardPath("1");
 			po.setTel("1");
 			//钟升仕
-			tctBaseBuyerService.insertUser(po);
+			//tctBaseBuyerService.insertUser(po);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

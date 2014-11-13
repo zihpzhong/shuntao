@@ -5,7 +5,8 @@ PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
 <configuration>
      <!-- Mybatis 命名空间 -->
     <typeAliases>
-         <typeAlias alias="TctBaseBuyer" type="com.shuntao.model.TctBaseBuyer"/> 
+          <typeAlias alias="TctBaseBuyer" type="com.shuntao.model.TctBaseBuyer"/> 
+         <typeAlias alias="User" type="com.shuntao.model.User"/> 
     </typeAliases>
 
     <!-- 映射map -->

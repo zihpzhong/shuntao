@@ -10,13 +10,13 @@ import com.shuntao.service.TctBaseBuyerService;
 @Service
 public class TctBaseBuyerServiceImpl implements TctBaseBuyerService{
 
-	@Autowired
-	private TctBaseBuyerDAO tctBaseBuyerDAO;
+	//@Autowired
+	//private TctBaseBuyerDAO tctBaseBuyerDAO;
 	
 	@Override
 	public int insertUser(TctBaseBuyer tctBaseBuyer) {
 		// TODO Auto-generated method stub
-		return tctBaseBuyerDAO.insertUser(tctBaseBuyer);
+		return 1;//tctBaseBuyerDAO.insertUser(tctBaseBuyer);
 	}
 
 }

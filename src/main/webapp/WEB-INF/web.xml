@@ -73,7 +73,50 @@
 		<servlet-name>spring</servlet-name>
 		<url-pattern>/</url-pattern>
 	</servlet-mapping>
-
+ 
+	  <welcome-file-list>
+	    <welcome-file>/WEB-INF/jsp/index.jsp</welcome-file>
+	  </welcome-file-list>
+	
+	  <!-- 处理静态资源访问,各个web容器的默认servlet名称如下：
+		 Tomcat, Jetty, JBoss, GlassFish  : "default" 
+		 Google App Engine : "_ah_default" 
+		 Resin : "resin-file" 
+		 WebLogic  : "FileServlet" 
+		 WebSphere : "SimpleFileServlet" 
+	   -->
+	  <servlet-mapping>
+	    <servlet-name>default</servlet-name>
+	    <url-pattern>*.htm</url-pattern>
+	  </servlet-mapping>
+	  <servlet-mapping>
+	    <servlet-name>default</servlet-name>
+	    <url-pattern>*.html</url-pattern>
+	  </servlet-mapping>
+	  <servlet-mapping>
+	    <servlet-name>default</servlet-name>
+	    <url-pattern>*.gif</url-pattern>
+	  </servlet-mapping>
+	  <servlet-mapping>
+	    <servlet-name>default</servlet-name>
+	    <url-pattern>*.png</url-pattern>
+	  </servlet-mapping>
+	  <servlet-mapping>
+	    <servlet-name>default</servlet-name>
+	    <url-pattern>*.jpg</url-pattern>
+	  </servlet-mapping>
+	  <servlet-mapping>
+	    <servlet-name>default</servlet-name>
+	    <url-pattern>*.js</url-pattern>
+	  </servlet-mapping>
+	  <servlet-mapping>
+	    <servlet-name>default</servlet-name>
+	    <url-pattern>*.css</url-pattern>
+	  </servlet-mapping>
+	  <servlet-mapping>
+	    <servlet-name>default</servlet-name>
+	    <url-pattern>*.swf</url-pattern>
+	  </servlet-mapping>
 	<!-- 错误跳转页面 -->
 	<error-page>
 		<!-- 路径不正确 -->
